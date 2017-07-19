@@ -65,13 +65,42 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-document.write("Welcome to Big Hair Concerts!");
+console.log('utils loaded as entry file');
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(3);
+
+document.write("Welcome to Big Hair Concerts!!!");
 
 console.log('App Loaded');
 
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+var login = function login(username, password) {
+    if (username !== 'admin' || password !== 'radical') {
+        console.log('incorrect login');
+    }
+};
+
+login('admin', 'idunno');
 
 /***/ })
 /******/ ]);

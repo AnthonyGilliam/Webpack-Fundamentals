@@ -1,3 +1,5 @@
-document.write("Welcome to Big Hair Concerts!");
+require('./login');
+
+document.write("Welcome to Big Hair Concerts!!!");
 
 console.log('App Loaded');
