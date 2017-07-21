@@ -1,5 +1,5 @@
 require('./login');
 
-document.write("Welcome to Big Hair Concerts!!!");
+document.body.innerText = "Welcome to Big Hair Concerts!";
 
 console.log('App Loaded');
