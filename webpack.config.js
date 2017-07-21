@@ -1,7 +1,17 @@
+var path = require('path');
+
+
+
 module.exports = {
+    context: path.resolve('js'),
     entry: ["./utils.js", "./app.js"],
     output: {
+        path: path.resolve(__dirname, '/build/js/'),
+        publicPath: '/public/assets/js/',
         filename: "bundle.js"
+    },
+    devServer: {
+        contentBase: 'public'
     },
     module: {
         loaders: [
@@ -21,5 +31,5 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.es6']
     },
-    watch: true
+    //watch: true
 };
